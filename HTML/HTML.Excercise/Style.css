@@ -1,0 +1,41 @@
+h1{
+    color:red;
+    background: yellow;
+}
+
+h2{
+    color:pink;
+    background: blue;
+}
+
+h3{
+    color:orange;
+    background: white;
+}
+
+h4{
+    color:green;
+    background: gray;
+}
+
+h5{
+    color: aqua;
+    background: black;
+}
+
+h6{
+    color:orchid;
+    background: blue;
+}
+
+p{
+    background: aqua;
+}
+#a{
+    color:orchid;
+    background: blue;
+}
+div{
+    color:gray;
+    background: blue;
+}
