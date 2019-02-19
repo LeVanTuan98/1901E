@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bat tat den</title>
+</head>
+<body>
+<script>
+    function Light(sw) {
+        var pic;
+        if(sw==0){
+            pic = "Light Off"
+        } else {
+            pic = "Light On"
+        }
+        document.getElementById("myImage").innerHTML = pic;
+    }
+</script>
+<!--<img id="myImage" src="pic_bulboff.gif" alt="Light off" width="100px" height="200px">-->
+<p id="myImage"></p>
+<p>
+    <button type="button" onclick="Light(1)">Light On</button>
+    <button type="button" onclick="Light(0)">Light Off</button>
+</p>
+</body>
+</html>
