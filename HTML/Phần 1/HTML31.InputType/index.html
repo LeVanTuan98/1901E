@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Type</title>
+    <link rel="icon" href="../../../Images/icon.ico">
+</head>
+<body>
+     <h1>Input Type</h1>
+     <form action="" name="user" method="post">
+         <p>
+             <!-- focus vào ô của thẻ input có id tương ứng-->
+             <label for="name">Họ tên</label>
+             <input type="text" id="name" name="name" value="" placeholder="Nhập họ tên">
+         </p>
+         <p>
+             <!-- focus vào ô của thẻ input có id tương ứng-->
+             <label for="birth">Ngày sinh</label>
+             <input type="date" id="birth" name="name" value="" placeholder="Nhập ngày sinh">
+         </p>
+         <p>
+             <!-- focus vào ô của thẻ input có id tương ứng-->
+             <label for="hour">Ngày sinh</label>
+             <input type="time" id="hour" name="hour" value="" placeholder="Nhập ngày sinh">
+         </p>
+         <p>
+             <!-- focus vào ô của thẻ input có id tương ứng-->
+             <!--readonly chỉ cho phép đọc thông tin trong ô, k cho phép nhập vào ô-->
+             <label for="sdt">SĐT</label>
+             <input type="tel" id="sdt" name="sdt" value="" placeholder="Nhập số điện thoại" readonly>
+         </p>
+         <p>
+             <!-- focus vào ô của thẻ input có id tương ứng-->
+             <!--require bắt buộc phải điền thông tin vào ô -->
+             <label for="address">Địa chỉ</label>
+             <input type="text" id="address" name="address" value="" placeholder="Nhập địa chỉ" required>
+         </p>
+         <p>
+             <label for="color">Màu yêu thích</label>
+             <input type="color" id="color" name="color" value="">
+         </p>
+         <p>
+             <label for="CV">CV</label>
+             <input type="file" id="CV" name="CV" value="">
+         </p>
+         <p>
+             <label for="token">Dữ liệu truyền ngầm token</label>
+             <input type="hidden" id="token" name="token" value="">
+         </p>
+         <p>
+             <label for="avatar">Ảnh đại diên</label>
+             <input type="image" id="avatar" name="avatar" src="../../../Images/icon.ico">
+         </p>
+
+
+         <p>
+             <input type="submit" name="sent" value="Gửi đăng kí">
+         </p>
+
+
+     </form>
+
+</body>
+</html>
