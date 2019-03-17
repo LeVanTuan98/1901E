@@ -1,0 +1,9 @@
+.decoration {
+    text-align: justify;
+    text-decoration:underline;
+    text-indent:100px;
+
+}
+.decoration p span {
+    text-shadow: orange 3px 2px 6px;
+}

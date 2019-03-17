@@ -1,0 +1,17 @@
+.font-family {
+    font-family: "Times New Roman" , Serif;
+}
+.font-style {
+    font-style: italic;
+}
+/*
+    font-style có 3 thuộc tính: +italic :chữ in nghiêng
+                                +oblique :chữ in nghiêng
+                                +normal : trở về dạng bình thường
+*/
+.font-weight {
+    font-weight: 900;/* Có các giá trị từ 100-900*/
+}
+.color {
+    color: orange;
+}

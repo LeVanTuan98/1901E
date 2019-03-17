@@ -1,0 +1,27 @@
+body {
+    width:960px;
+    margin:0 auto;
+    font-family:"Times New Roman" , Serif;
+    font-size:16px;
+    color:white;
+}
+#header {
+    background: orange;
+    padding: 10px 25px;
+}
+#content {
+    background: gray;
+    width:500px;
+    padding:10px;
+    float:left;
+}
+#sidebar {
+    background: #5AFF5B;
+    width:400px;
+    float:right;
+    padding: 10px;
+}
+#footer {
+    background: blue;
+    clear:both;
+}

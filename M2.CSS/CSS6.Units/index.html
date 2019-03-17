@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit</title>
+    <style type="text/css">
+        .absolute {
+            width: 300px;
+            height: 300px;
+            background: orange;
+        }
+        .relative {
+            font-size: 2em;
+        }
+        .percent {
+            background: red;
+            width:50%;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đơn vị đo trong CSS</h1>
+    <h2>Đơn vị đo tuyệt đối : px</h2>
+    <p class="absolute">Đơn vị đo tuyệt đối 1px = 1/96 của 1in</p>
+    <h2>Đơn vị đo tương đối: (em) </h2>
+    <p>Mặc định 1em=16px</p>
+    <p>Nhưng cái chuẩn này phụ thuộc vào phần cấu hình Css của thẻ body</p>
+    <p class="relative">Khi font-size của thẻ body = 20px => 1em=20px</p>
+    <h2>Đơn vị đo tương đối: (%)</h2>
+    <div class="row" style="width:500px;height:200px;background: yellow;">
+        <p class="percent"> Đơn vị đo %</p>
+    </div>
+
+
+</body>
+</html>

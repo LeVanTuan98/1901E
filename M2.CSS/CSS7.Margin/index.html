@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin</title>
+    <style type="text/css">
+        .individual {
+            background: orange;
+            margin-left: 100px;
+            margin-right: 200px;
+            margin-top:30px;
+            margin-bottom:100px;
+        }
+        .shorthand {
+            margin: 30px 20px 100px 30px;
+            background: #FF0000;
+        }
+        .auto {
+            background: gold;
+            width:300px;
+            margin:0 auto;
+            text-align:center;
+        }
+        div.inherit {
+            background: gold;
+            width:300px;
+            margin:0 auto;
+        }
+        div.inherit > p  {
+            margin: inherit;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Margin (Căn lề)</h1>
+    <p class="individual">Căn lề</p>
+    <p class="shorthand">ShortHand Margin (Margin: top right bottom left</p>
+    <p>Margin sẽ tính từ mốc của element phía trước</p>
+    <p style="margin: 20px 10px 30px;background: green">ShortHand Margin 3 giá trị : (Margin: top right-left bottom)</p>
+    <p style="margin: 10px 20px ; background: violet">ShortHand Margin 2 giá trị : (Margin: top-bottom right-left )</p>
+    <p style="margin: 30px ; background: pink">ShortHand Margin 1 giá trị : (Margin: four_edge )</p>
+    <div class="auto">
+        <p>Margin Auto</p>
+        <p>Để sử dụng thuộc tính này cần khai báo width cụ thể</p>
+    </div>
+    <div class="inherit">
+        <p>Margin inherit</p>
+        <p>Thuộc tính kế thừa</p>
+    </div>
+
+
+</body>
+</html>

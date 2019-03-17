@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*selector .header chứa .logo (tất cả các element nằm trong có class ="logo" trong class="header"*/
+        .header .logo {
+            background: red;
+        }
+        /*selector chỉ có các element có class="logo" nằm trực tiếp bên trong class="header"*/
+        .header > .logo {
+            background: red;
+        }
+        .footer .logo {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">LOGO</div>
+    <nav class="main-menu">
+        <div class="logo">LOGO SUB</div>
+        <ul class="main-menu-ul">
+            <li><a href="#">Menu 1</a> </li>
+            <li><a href="#">Menu 2</a> </li>
+            <li><a href="#">Menu 3</a> </li>
+        </ul>
+    </nav>
+</div>
+<div class="footer">
+    <div class="logo">FOOTER LOGO</div>
+    <nav class="footer-menu">
+        <ul class="footer-menu_ul">
+            <li><a href="#">Menu 1</a> </li>
+            <li><a href="#">Menu 2</a> </li>
+            <li><a href="#">Menu 3</a> </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
