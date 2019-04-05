@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-11</title>
+    <style type="text/css">
+        /*==Các giá trị của box-sizing: + Content-box: cố định từ nội dung
+                                           +padding-box: Cố định từ padding
+                                           +border-box: cố định từ border*/
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;/*Firefox phiên bản cũ*/
+            -webkit-box-sizing: border-box;/*Chrome, Opera phiên bản cũ*/
+        }
+
+        div {
+            width:500px;
+            height:500px;
+            padding:20px;
+            background: #FFC0CB;
+            border:5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Thuộc tính BOX-SIZING</h1>
+    </div>
+</body>
+</html>

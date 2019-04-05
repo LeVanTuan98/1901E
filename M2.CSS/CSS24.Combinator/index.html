@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ResetCss.css">
+    <style type="text/css">
+        /*Con cháu chắt*/
+        .container .parag {
+            background: green;
+        }
+        /*Con trực tiếp*/
+        .container > .parag {
+            background: orange;
+        }
+        /*Anh chị em liền kề*/
+        .container + p {
+            background: red;
+        }
+        /* tất cả Anh chị em*/
+        .container ~ section {
+            background: violet;
+        }
+
+    </style>
+</head>
+<body>
+<!--descendant selector (space)-->
+<!--child selector (>)-->
+<!--adjacent sibling selector (+)-->
+<!--general sibling selector (~)-->
+    <div class="container">
+        <p class="parag">Selector trưc tiếp</p>
+        <div class="row">
+            <p class="parag">Selector lồng con</p>
+            <p class="parag">Selector lồng con</p>
+            <p class="parag">Selector lồng con</p>
+            <p class="parag">Selector lồng con</p>
+        </div>
+    </div>
+    <p>Thẻ p cùng cấp anh chị em</p>
+    <p>Thẻ p cùng cấp anh chị em</p>
+    <p>Thẻ p cùng cấp anh chị em</p>
+    <section>Thẻ section cùng cấp anh chị em </section>
+    <section>Thẻ section cùng cấp anh chị em </section>
+
+</body>
+</html>

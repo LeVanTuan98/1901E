@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ResetCss.css">
+    <style type="text/css">
+        .clearfix {
+            overflow: auto;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #target1 , #target2 {
+            background: green;
+            color:white;
+            padding:20px;
+            width:400px;
+        }
+        #target1 {
+            float:left;
+        }
+        #target2 {
+            float: right;
+        }
+        .clear {
+            clear:both;
+        }
+        #parent {
+            width:500px;
+            padding:20px 0px;
+            background: orange;
+            margin-top:10px;
+            /*overflow: hidden;*/
+        }
+        #child1 , #child2 {
+            width:200px;
+            padding:15px;
+            color:white;
+        }
+        #child1 {
+            float:left;
+            background: #FF0000;
+
+        }
+        #child2 {
+            float: right;
+            background: gold;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="target1">
+        Thẻ nằm trong Body
+    </div>
+    <div id="target2">
+        Thẻ nằm trong Body
+    </div>
+    <div class="clear"></div>
+    <div id="parent" class="clearfix">
+        <div id="child1">Thẻ nằm trong Div</div>
+        <div id="child2">Thẻ nằm trong Div</div>
+    </div>
+</body>
+</html>

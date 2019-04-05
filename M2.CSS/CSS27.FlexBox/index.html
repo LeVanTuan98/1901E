@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ResetCss.css">
+    <style type="text/css">
+        .parent {
+            background: #5AFF5B;
+            display:flex;
+            flex-direction:row-reverse;
+            flex-wrap: nowrap;
+        }
+        .parent > .col1,.col2,.col3 {
+            background: orange;
+            padding:40px;
+            width:300px;
+            border:2px solid white;
+        }
+    </style>
+</head>
+<body>
+   <p>Để sử dụng thuộc tính flex-box phải đặt cho thẻ mẹ thuộc tính <p>display:flex;</p></p>
+   <h2>Flex-direction </h2>
+   <p>Sau đó sử dụng thuộc tính <b>flex-direction: row/row-reverse hoặc column/column-reverse</b> để điều chỉnh hướng và kiểu hiện thị</p>
+    <h2>Flex-wrap</h2>
+   <p><b>flex-wrap: wrap/nowrap/wrap-reverse</b> <br>
+       Khi giá trị là wrap/wrap-reverse  thì các flex iterm bên trong luôn được bao bởi thẻ mẹ, khi zoom nhỏ lại thì nó tự động xuống dòng, nhưng kích thước của các flex iterm vẫn giữ nguyên</p>
+        Khi giá trị là nowrap   khi zoom nhỏ lại thì nó luôn giữ nguyên format ban đầug và kích thước của các flex iterm sẽ ị thu nhỏ lại</p>
+   <h2>justify-content: căn theo chiều ngang</h2>
+   <h2>align-items: căn theo chiều dọc</h2>
+   <div class="parent">
+        <div class="col1">col1</div>
+        <div class="col2">col2</div>
+        <div class="col3">col3</div>
+    </div>
+</body>
+</html>

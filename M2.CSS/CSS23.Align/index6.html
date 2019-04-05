@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ResetCss.css">
+    <style type="text/css">
+        #target1 {
+            padding:20px;
+            margin:50px auto;
+            width:700px;
+            background: green;
+            color:white;
+            text-align:center;
+        }
+        #target2 {
+            margin:50px auto;
+            width:700px;
+            height:200px;
+            background: green;
+            color:white;
+            line-height:200px;
+            text-align: center;
+        }
+        #parent {
+            position:relative;
+            background: green;
+            margin: 50px 0;
+            height:500px;
+        }
+        #child {
+            position:absolute;
+            padding:20px;
+            background: gold;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="target1">
+        Căn giữa theo chiều dọc cho phần nội dung là văn bản <br>
+        Áp dụng cho 1 thẻ mẹ không có chiều cao cụ thể
+    </div>
+    <div id="target2">
+        Căn giữa cho nội dung 1 hàng sử dụng line-height=height
+    </div>
+    <div id="parent">
+        <div id="child">
+            div lồng div <br>
+            div lồng div <br>
+            div lồng div <br>
+            div lồng div <br>
+            div lồng div <br>
+            div lồng div
+        </div>
+    </div>
+        <p>Vertical <span style="vertical-align: 20px">-align</span></p>
+</body>
+</html>
