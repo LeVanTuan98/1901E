@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Thay đổi giá trị thuộc tính SRC của hình ảnh</h1>
+    <div style="margin: 1em;">
+        <img id="target" src="image/pic_bulboff.gif" alt="Off">
+    </div>
+<!--    <div style="margin: 2em;">-->
+<!--        <button onclick="document.getElementById('target').src = 'image/pic_bulbon.gif';">Turn On</button>-->
+<!--        <button onclick="document.getElementById('target').src = 'image/pic_bulboff.gif';">Turn Off</button>-->
+<!--    </div>-->
+
+
+    <div style="margin:2em;">
+        <button id="btn" onclick="Check()">Turn On</button>
+    </div>
+
+
+    <script type="text/javascript">
+        // document.getElementById('target').src = 'image/pic_bulbon.gif';
+        // document.getElementById('target').src = 'image/pic_bulboff.gif';
+        function Light(sw) {
+            var pic;
+            var txt;
+            if(sw==0){
+                pic = "image/pic_bulboff.gif";
+                txt = "Turn On";
+            } else {
+                pic = "image/pic_bulbon.gif";
+                txt = "Turn Off";
+            }
+            document.getElementById("target").src = pic;
+            document.getElementById("btn").innerHTML = txt;
+        }
+        function Check() {
+            var txt=document.getElementById('btn').innerHTML;
+            if (txt=="Turn On") {
+                Light(1);
+            } else {
+                Light(0);
+            }
+        }
+
+    </script>
+</body>
+</html>

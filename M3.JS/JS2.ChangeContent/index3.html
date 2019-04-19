@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+   <h1>Sự kiện( Event ) Click trong JavaScript</h1>
+   <div id="target">Nội dung mở đầu</div>
+   <button onclick='document.getElementById("target").innerHTML = "Hello JavaScript";'  style="padding:1em;">Click</button>
+    <p>Muốn bắt sự kiện Click chuột trong JS, sử dụng thuộc tính onclick trong thẻ HTML, Bên trong onclick là thuộc tính JS muốn thực thi</p>
+
+
+   <button onclick="var txt = document.getElementById('target').innerHTML;document.getElementById('content').innerHTML=txt;">Get content</button>
+   <div id="content"></div>
+
+
+   <!--    Do trình duyệt sẽ tìm ID="target" trước nên phải đặt khối Script ở dưới sau khi đã có phần tử HTML có ID="Target"-->
+    <script type="text/javascript">
+        // document.getElementById('target').innerHTML = 'Hello JavaScript';
+        // var txt = document.getElementById('target').innerHTML;
+        // document.getElementById('content').innerHTML=txt;
+    </script>
+</body>
+</html>

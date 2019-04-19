@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ResetCss.css">
+    <style type="text/css">
+        .container {
+            width:1000px;
+            background: #CCCCCC;
+            margin:30px auto;
+        }
+        .row {
+            background: aqua;
+            overflow: auto;
+            padding:20px 0;
+        }
+        .row::before {
+            content: "Thêm vào phần đầu của class.row";
+            clear: both;
+            color:red;
+            display:block;
+        }
+        .row::after {
+            content: "Thêm vào phần sau của class.row";
+            clear: both;
+            color:black;
+            display:block;
+        }
+        .col1 {
+            float:left;
+            background: #FFFF00;
+            width:33%;
+            color:white;
+            min-height:350px;
+        }
+        .col2 {
+            float:right;
+            background: #5AFF5B;
+            width:67%;
+            color:white;
+            min-height:350px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>::before ::after</h1>
+    <h2>::before để thêm phần nội dung/CSS ( có thể là rỗng ) vào phần đầu trong Selector </h2>
+    <h2>::before để thêm phần nội dung/CSS ( có thể là rỗng ) vào phần sau trong Selector </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col1">Column 1</div>
+            <div class="col2">Column 2</div>
+        </div>
+    </div>
+</body>
+</html>

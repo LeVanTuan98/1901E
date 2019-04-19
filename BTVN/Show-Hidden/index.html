@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        #table {
+            display:block;
+        }
+        #table table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top:3em;
+        }
+         h1 {
+            text-align: center;
+            padding-top:1em;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        .btn {
+            position:absolute;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+        button {
+           display: inline-block;
+            margin: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Show/Hidden Table</h1>
+        <div id="table">
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
+        </div>
+        <div class="btn">
+            <button  onclick="Hidden()">Hidden</button>
+            <button  onclick="Show()">Show</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function Show() {
+            document.getElementById('table').style.display = 'block';
+            // document.getElementById('btn').innerHTML = 'Hidden';
+        }
+        function Hidden() {
+            document.getElementById('table').style.display = 'none';
+            // document.getElementById('btn').innerHTML = 'Show';
+        }
+        function Implement() {
+            // var style_table = document.getElementById('table').style.display;
+            // if (style_table == 'none') {
+            //     Show();
+            // }
+            // if (style_table == 'block') {
+            //     Hidden();
+            // }
+        }
+    </script>
+</body>
+</html>

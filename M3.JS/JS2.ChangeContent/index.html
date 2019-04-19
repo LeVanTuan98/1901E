@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <h1>Thay đổi nội dung của thẻ HTML bằng JavaScript</h1>
+    <h2 id="target">Nội dung khởi đầu</h2>
+    <p>Thay đổi nội dung của thẻ h2 cỏ id= target sẽ chuyển nội dung thành "Hello JavaScript"</p>
+
+    <div>
+        <p>document.getElementById("target").innerHTML = "Hello JavaScript";</p>
+        <ol style="line-height: 3em;">
+            <li>document : Toàn bộ trang HTML/ văn bản HTML . document => object trong JavaScript</li>
+            <li>getElementById('id') : Chọn thẻ HTML có thuộc tính ID là giá trị trong ngoặc</li>
+            <li>innerHTML : Nội dung bên trong HTML Selector do lệnh getElementById của JS chọn</li>
+            <li> = : Phép gán</li>
+            <li> "  " : Các chuỗi trong JS phải đặt trong "..." hoặc '...'</li>
+        </ol>
+    </div>
+
+<!--    Do trình duyệt sẽ tìm ID="target" trước nên phải đặt khối Script ở dưới sau khi đã có phần tử HTML có ID="Target"-->
+    <script type="text/javascript">
+        document.getElementById("target").innerHTML = "Hello JavaScript";
+    </script>
+</body>
+</html>
