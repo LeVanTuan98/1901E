@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Tên tính thành</th>
+        <th>Diện tích</th>
+    </tr>
+    </thead>
+    <tbody id="content">
+
+    </tbody>
+</table>
+<div>
+    <button id="btn" onclick="generateProvince()">Create Data</button>
+</div>
+<script type="text/javascript">
+    function generateProvince(){
+        var html ='';
+        // Khởi tạo đối tượng
+        var haNoi = { id:1 , name : "Hà Nội" , S : 100};
+        var hoChiMinh = { id:2 , name : "TP.Hồ Chí Minh" , S : 100};
+        var haiPhong = { id:3 , name : "Hải Phòng" , S : 100};
+        var daNang = { id:4 , name : "Đà Nẵng" , S : 100};
+        var canTho = { id:5 , name : "Cần Thơ" , S : 100};
+
+        var Province = [haNoi,hoChiMinh,haiPhong,daNang,canTho];
+        //
+        // for (var i = 0; i < 5; i++){
+        //     html += "<tr>";
+        //     html += "<td>" + Province[i].id + "</td>";
+        //     html += "<td>" + Province[i].name + "</td>";
+        //     html += "<td>" + Province[i].S + "</td>";
+        //     html += "</tr>";
+        // }
+        var i = 0;
+        while (i < 5){
+            html += "<tr>";
+            html += "<td>" + Province[i].id + "</td>";
+            html += "<td>" + Province[i].name + "</td>";
+            html += "<td>" + Province[i].S + "</td>";
+            html += "</tr>";
+            i++;
+        }
+
+        
+        // do {
+        //     html += "<tr>";
+        //     html += "<td>" + Province[i].id + "</td>";
+        //     html += "<td>" + Province[i].name + "</td>";
+        //     html += "<td>" + Province[i].S + "</td>";
+        //     html += "</tr>";
+        //     i++;
+        // } while ( i < 5);
+        
+        document.getElementById("content").innerHTML = html;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    // Kiểu dữ liệu dạng chuỗi
+    var name = "Lê Tuấn";
+    // Kiểu số
+    var age = 18;
+    // Khai báo đối tượng
+    var obj = {};
+    // Vừa khai báo đối tượng, vừa khai báo thuộc tính của đối tượng
+    var student1 = {name:"Lê Tuấn",age:18};
+    /*
+    * Khai báo đối tượng và khai báo thuộc tính của đối tượng
+    * */
+    var student2 = {};
+    student2.name = "Nguyễn A";
+    student2.age = 17;
+    // Kiểu dữ liệu boolean: true / false
+    var gender1 = true;
+    var gender2 = false;
+
+    // Kiểu dữ liệu dạng mảng
+    var list_name = ["Nguyễn Văn A","Nguyễn Văn B","Nguyễn Văn C"];
+    var list_age = [18,19,20];
+    var list_gender = [gender1,gender2];
+    var list_student = [student1, student2];
+    // Mảng thì bao gồm nhiều phần tử có đánh số thứ tự mà thuật ngữ gọi là key
+    // key trong mảng của js và php thì bắt đầu từ 0
+    // mỗi phần tử trong mảng phân tách bởi dấy phẩy , và có 1 key duy nhất
+
+
+    // truy cập vào phần tử của mảng
+    console.log('Họ và tên: ' + list_name[0]);
+    console.log('Tuổi: ' + list_age[0]);
+    console.log('Nam/Nữ: ' + list_gender[0]);
+
+    document.write('Họ và tên: ' + list_student[0].name);
+    document.write("<br>");
+    document.write('Tuổi: ' + list_student[0].age);
+
+    // kiểu undefined
+    var a; // undefined xuất hiện khi mà chúng ta không gán giá trị cho biến
+    // undefined có nghĩa là không xác định
+
+    // lệnh typeof
+    // trả về kiểu dữ liệu của biến
+    console.log('typeof a : ' + typeof a);
+    console.log('typeof name: ' + typeof name);
+    console.log('typeof age : ' + typeof age);
+    console.log('typeof gender1 : ' + typeof gender1);
+    console.log('typeof gender2 : ' + typeof gender2);
+    console.log('typeof student2 : ' + typeof student2);
+    console.log('typeof list_name : ' + typeof list_name);
+
+    // Dạng rỗng
+    var name1 = '';
+    console.log('typeof name1 : ' + typeof name1);
+    // Dạng Null (không có gì cả) khác với kiểu Undefined (Không được khai báo)
+    var data = null;
+    console.log('typeof data : ' + typeof data);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <p>Hàm trong JS được tạo ra để thực hiện 1 nhiệm vụ cụ thể</p>
+        <p>Hàm trong JS được chạy khi được gọi</p>
+        <p>Cú pháp  hàm: function ten_ham (arg1, arg2) {//code}</p>
+        <p>arg1 và arg2 là đối số được truyền vào trong hàm</p>
+        <p>Gọi hàm : ten_ham(x,y);</p>
+    </div>
+
+    <script type="text/javascript">
+        function chuVi(banKinh) {
+            var pi = 3.14;
+            return banKinh*2*pi;
+        }
+
+        var r=10;
+        console.log("Chu vi đường tròn có bán kính R=" + r +"  là :" +chuVi(r));
+        function diemTong(toan,ly,hoa) {
+            return (toan + ly + hoa)/3;
+        }
+
+        var a = 7;
+        var b = 3;
+        var c = 6;
+        // gọi hàm và truyền tham số
+        var ketquadiem = diemTong(a,b,c);
+        console.log('Điểm trung bình : ' + ketquadiem);
+    </script>
+</body>
+</html>

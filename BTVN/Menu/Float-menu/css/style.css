@@ -1,0 +1,61 @@
+/*
+        Clear fix
+*/
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*
+        Style
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header {
+
+}
+header .title {
+    width: 100%;
+    text-align: center;
+    background: gainsboro;
+    color: orange;
+    font-family: "Times New Roman" , Serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0.5em;
+}
+header .main-navigation {
+    margin-top: 1em;
+    width:100%;
+}
+.main-navigation .main-menu {
+    list-style-type: none;
+    display:block;
+    margin:0 auto;
+    padding:0;
+    width:41%;
+}
+.main-menu li {
+    float: left;
+    padding:0.2em 1em;
+    background: black;
+}
+.main-menu li a {
+    text-decoration: none;
+    font-family: "Times New Roman" , Serif;
+    color:white;
+    text-align: center;
+}
+.main-menu li:hover {
+    background: white;
+}
+.main-menu li:hover a {
+    color:black;
+    font-weight: bold;
+}

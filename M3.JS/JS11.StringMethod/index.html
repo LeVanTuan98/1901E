@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var str1 = "Hello javaScript php nodeJs";
+    var pos1 = str1.indexOf("php");
+    // sử dụng phương thức indexOf('sub_string') để tìm vị trí chuỗi con xuất hiện trong chuỗi mẹ
+    // indexOf đếm từ 0
+    console.log("Vị trí của chuỗi \"php\" trong str1 là :" + pos1);
+
+    var str2 = "Hello javaScript php nodeJs php java php";
+    var pos2 = str2.lastIndexOf("php")
+    console.log("Vị trí của chuỗi \"php\" xuất hiện lần cuối trong str2 là :" + pos2);
+
+    // trích xuất 1 chuỗi nhỏ từ 1 chuỗi lớn
+    // lấy tên của 1 người str3.slice(vị trí bắt đầu,vị trí kết thúc)
+    var str3 = str1.slice(0,16);
+    console.log(str3);
+
+    // substr(ví trí bắt đầu, độ dài của chuỗi muốn cắt)
+    var str = "Lê Văn Tuấn";
+    var str4 = str.substr(7,5);
+    console.log(str4);
+
+</script>
+</body>
+</html>

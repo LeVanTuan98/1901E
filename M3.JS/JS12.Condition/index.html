@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var age = 19;
+//    Biểu thức trong ngoặc (age>18) ==true => Chạy code trong khối if
+//    Biểu thức trong ngoặc (age>18) ==false => Chạy code trong khối else
+    if (age>18) {
+        alert("Đã đủ tuổi trưởng thành")
+    } else {
+        alert("Đang tuổi vị thành niên")
+    }
+
+    console.log((age > 18) ? "Đã đủ tuổi trưởng thành" : "Đang tuổi vị thành niên")
+    var point = 6.8;
+    if (point >=9) {
+        console.log("Xuất sắc");
+    } else if (point >=8) {
+        console.log("Giỏi");
+    } else if (point >=7) {
+        console.log("Khá");
+    } else if (point >=6.5) {
+        console.log("TB khá");
+    } else if (point >=5) {
+        console.log("TB");
+    } else  {
+        console.log("Kém");
+    }
+
+    var choice = 3;
+    switch (choice) {
+        case 0 :
+            console.log("Không lựa chọn");
+        case 1 :
+            console.log("Lựa chọn 1");
+        case 2 :
+            console.log("Lựa chọn 2");
+        case 3 :
+            console.log("Lựa chọn 3");
+        default :
+            console.log("Không hợp lệ");
+    }
+
+</script>
+</body>
+</html>

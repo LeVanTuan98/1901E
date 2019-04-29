@@ -27,21 +27,21 @@
         tr:nth-child(even) {
             background-color: #dddddd;
         }
-        .btn {
-            position:absolute;
-            left:50%;
-            transform: translate(-50%,0);
-        }
-        button {
-           display: inline-block;
-            margin: 2em;
+        /*.btn {*/
+        /*    position:absolute;*/
+        /*    left:50%;*/
+        /*    transform: translate(-50%,0);*/
+        /*}*/
+        #btn {
+           display: block;
+            margin: 2em auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Show/Hidden Table</h1>
-        <div id="table">
+        <div id="table" style="display:block;">
             <table>
                 <tr>
                     <th>Company</th>
@@ -80,30 +80,32 @@
                 </tr>
             </table>
         </div>
-        <div class="btn">
-            <button  onclick="Hidden()">Hidden</button>
-            <button  onclick="Show()">Show</button>
+        <div>
+<!--            <button  onclick="Hidden()">Hidden</button>-->
+<!--            <button  onclick="Show()">Show</button>-->
+            <button id="btn" onclick="Implement()">Hidden</button>
         </div>
     </div>
 
     <script type="text/javascript">
         function Show() {
             document.getElementById('table').style.display = 'block';
-            // document.getElementById('btn').innerHTML = 'Hidden';
+            document.getElementById('btn').innerHTML = 'Hidden';
         }
         function Hidden() {
             document.getElementById('table').style.display = 'none';
-            // document.getElementById('btn').innerHTML = 'Show';
+            document.getElementById('btn').innerHTML = 'Show';
         }
         function Implement() {
-            // var style_table = document.getElementById('table').style.display;
-            // if (style_table == 'none') {
-            //     Show();
-            // }
-            // if (style_table == 'block') {
-            //     Hidden();
-            // }
+            var style_table = document.getElementById('table').style.display;
+            if (style_table == 'none') {
+                Show();
+            }
+            if (style_table == 'block') {
+                Hidden();
+            }
         }
+
     </script>
 </body>
 </html>
