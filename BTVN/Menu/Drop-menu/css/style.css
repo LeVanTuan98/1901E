@@ -38,12 +38,6 @@ header .main-navigation {
     padding:0;
     width:100%;
 }
-.main-menu li.menu-item {
-    float:left;
-    position: relative;
-    width: 20%;
-    border-right:1px solid white;
-}
 .main-menu li {
     padding: 0.2em 1em;
     background: black;
@@ -60,6 +54,13 @@ header .main-navigation {
 .main-menu li:hover > a {
     color:black;
     font-weight: bold;
+}
+
+.main-menu li.menu-item {
+    float:left;
+    position: relative;
+    width: 20%;
+    border-right:1px solid white;
 }
 /*
     Submenu

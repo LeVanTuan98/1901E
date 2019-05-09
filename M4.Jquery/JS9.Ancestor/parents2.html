@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Method parents() trong Jquery</h1>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="level1">
+                    <a href="#">Trang chủ</a>
+                    <ul>
+                        <li class="level2"><a href="#">Trang chủ 1</a></li>
+                        <li class="level2"><a href="#">Trang chủ 2</a></li>
+                    </ul>
+                </li>
+                <li class="level1"><a href="#">Giới thiệu</a></li>
+                <li class="level1"><a href="#">Sản phẩm</a></li>
+                <li class="level1"><a href="#">Tin tức</a></li>
+                <li class="level1"><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div style="margin-top:30px;">
+        <button id="control">Control</button>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#control").on("click",function () {
+                // parent() sẽ cho phép tìm lên tất cả cha, ông, ... của selector
+                // Khi truyền tham số là selector vào parents('tham số')
+                // => các cấp tổ tiên bên trên thẻ đó dựa trên tham số truyền vào parents('tham số')
+                $("li.level2").parents("ul").css({"border": "1px solid orange","font-size":"20px"});
+            })
+        });
+    </script>
+</body>
+</html>

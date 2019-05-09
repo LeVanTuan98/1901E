@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Jquery remove content</h1>
+    <pre>
+        remove() - Removes the selected element (and its child elements)
+        => gỡ bỏ bản thân selector và các thẻ bên trong nó
+        empty() - Removes the child elements from the selected element
+        => Chỉ gỡ bỏ thẻ con bên trong nó và vẫn giữ lại selector được chọn
+    </pre>
+
+    <div id="target" style="padding: 50px 30px;border:1px solid orange;">
+        Nội dung của div
+        <div class="child1">child 1</div>
+        <div class="child2">child 2</div>
+        <div class="child3">child 3</div>
+    </div>
+
+    <div style="margin-top:50px;">
+        <button id="control-remove">Remove</button>
+        <button id="control-empty">Empty</button>
+    </div>
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#control-remove').on("click",function(){
+                $('#target').remove();
+            });
+
+            $('#control-empty').on("click",function(){
+                $('#target').empty();
+            });
+        });
+    </script>
+</body>
+</html>
